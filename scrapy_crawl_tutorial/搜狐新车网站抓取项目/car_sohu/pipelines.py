@@ -79,17 +79,3 @@ class GanjiPipeline(object):
     def close_spider(self, spider):
         self.connection.close()
         self.fa.close()
-#
-#         # self.mailer.send(to=["huzhangyong@haistand.com.cn"], subject=settings['MONGODB_COLLECTION'], body="Scrapy Finished!",
-#         #                  cc=["hzhy_1@163.com"])
-# #save json
-# class GanjiPipeline(object):
-#
-#         def __init__(self):
-#             self.file = codecs.open('D:\data\jsondata\SGMfamily.json', 'w', encoding='utf-8')
-#         def process_item(self, item, spider):
-#             line = json.dumps(dict(item), ensure_ascii=False)+"\n"
-#             self.file.write(line)
-#             return item
-#         def spider_closed(self, spider):
-#             self.file.close()
