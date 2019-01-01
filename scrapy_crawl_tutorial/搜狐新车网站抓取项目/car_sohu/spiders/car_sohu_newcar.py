@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from ganji.items import SohunewcarItem
+from car_sohu.items import SohunewcarItem
 import time
 from scrapy.conf import settings
 from scrapy.mail import MailSender
