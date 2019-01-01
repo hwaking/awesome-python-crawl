@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ganji'
+BOT_NAME = 'car_sohu'
 
-SPIDER_MODULES = ['ganji.spiders']
-NEWSPIDER_MODULE = 'ganji.spiders'
+SPIDER_MODULES = ['car_sohu.spiders']
+NEWSPIDER_MODULE = 'car_sohu.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -60,7 +60,7 @@ COOKIES_ENABLED = False
 #}
 DOWNLOADER_MIDDLEWARES = {
         'scrapy.downloadermiddleware.useragent.UserAgentMiddleware' : None,
-        'ganji.spiders.rotate_useragent.RotateUserAgentMiddleware' :400
+        'car_sohu.spiders.rotate_useragent.RotateUserAgentMiddleware' :400
     }
 
 # Enable or disable extensions
@@ -75,10 +75,10 @@ DOWNLOADER_MIDDLEWARES = {
 #    'ganji.pipelines.SomePipeline': 300,
 #}
 
-ITEM_PIPELINES = {'ganji.pipelines.GanjiPipeline':300 }
+ITEM_PIPELINES = {'spider.pipelines.GanjiPipeline':300 }
 MONGODB_SERVER = "192.168.1.92"
 MONGODB_PORT = 27017
-MONGODB_DB = "usedcar"
+MONGODB_DB = "souhu"
 MONGODB_COLLECTION = "ic5u"
 CrawlCar_Num = 2000000
 
@@ -95,22 +95,7 @@ CrawlCar_Num = 2000000
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
 
-#Mail settings
-# MAIL_FROM ="hzhy_1@163.com"
-# MAIL_HOST="smtp.163.com"
-# MAIL_PORT=25
-# MAIL_USER="hzhy_1@163.com"
-# MAIL_PASS="Hzhy@7115240"
-
 #log
 LOG_LEVEL="INFO"
 # LOG_LEVEL="DEBUG"
 #LOG_FILE ="scrapy.log"
-
-# Enable and configure HTTP caching (disabled by default)
-# See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
-#HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = 'httpcache'
-#HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
