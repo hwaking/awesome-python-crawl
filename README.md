@@ -17,7 +17,7 @@ Python Crawl tutorials
     
     该文件夹包含使用python+requests+selenium+chromedriver模拟浏览器进行爬取网站的项目代码，目前包含：
     
-    [selenium_crawl_tutorial](https://github.com/Springzhen/python-crawl-demo/tree/master/selenium_crawl_tutorial) 为模拟浏览器爬取[中国债券信息网](https://www.chinabond.com.cn/Channel/21000)的代码项目
+    [selenium_crawl_tutorial](https://github.com/Springzhen/python-crawl-demo/tree/master/selenium_crawl_tutorial) 为模拟浏览器爬取[中国债券信息网](https://www.chinabond.com.cn/Channel/21000)企业债板块对应内容的抓取与下载项目代码
     
     项目持续添加中......
     
