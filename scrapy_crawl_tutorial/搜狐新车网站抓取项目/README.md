@@ -16,6 +16,11 @@ scrapy crawl sohunewcar
 
 ```
 
+## Notes
+```diff
+- 注意：执行抓取命令前请先确保数据库配置正确! 可以根据该框架进行调整使用！
+```
+
 ## Reference
 
 - [scrapy 官方 tutorial](https://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html)
