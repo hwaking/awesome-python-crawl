@@ -35,7 +35,7 @@ python data_crawl.py pagenum
 - 抓取过程：抓取过程生成download文件夹，发行文件数据保存于该文件中，同时生产log文件夹，包含日志文件log.txt 以及 已经抓取完成的文件链接用于支持断点续抓取操作，避免重复抓取浪费时间
 
 - 抓取过程截图
-
+![image](https://github.com/Springzhen/python-crawl-demo/blob/master/selenium_crawl_tutorial/%E4%B8%AD%E5%9B%BD%E5%80%BA%E5%88%B8%E4%BF%A1%E6%81%AF%E7%BD%91%E6%8A%93%E5%8F%96%E9%A1%B9%E7%9B%AE/images/%E6%8C%87%E5%AE%9A%E4%BB%8E%E7%AC%AC600%E9%A1%B5%E5%BC%80%E5%A7%8B%E6%8A%93%E5%8F%96%E8%BF%87%E7%A8%8B.png)
 
 
 
