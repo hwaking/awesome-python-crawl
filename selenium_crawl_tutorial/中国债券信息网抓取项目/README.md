@@ -20,10 +20,10 @@ cd ./selenium_crawl_tutorial
 
 ```
 
-Step2：执行抓取命令有两种方法
-<font color=red>注意：执行此步前请先清空log下的文件<font>
+Step2：执行抓取命令有两种方法<br>
+```diff
+- 注意：执行此步前请先清空log下的文件!
 
-```
 # 从第1页开始抓取
 python data_crawl.py
 
